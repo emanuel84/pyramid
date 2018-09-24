@@ -8,6 +8,14 @@ Es aplicación posee un Login y un Home básico.
 Requerimientos:
 - python-virtualenv
 
+Instalar la aplicación:
+* Descargue el repositorio
+* Active el virtualenv: source env/bin/activate
+* Instalar los paquetes: pip install -e .
+* Inicializar la base: initialize_db development.ini
+
+El usuario creado por defecto es admin, con clave admin
+
 
 Pasos que hice para realizar la aplicación:
 
@@ -57,7 +65,13 @@ Pasos que hice para realizar la aplicación:
     Run your project.
         env/bin/pserve development.ini
 
+    (env) emanuel@emanuel:~/pyramid$ pip install -e .
 
+
+* Crear base de datos Postgres (yo utilize la imagen de docker oficial de postgres)
+    - docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=admin -d postgres
+    - crear el usuario pyramid con clave my_password.
+    - crear la base pyramid con el usuario antes creado
 
 
 
