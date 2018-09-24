@@ -43,13 +43,6 @@ Pasos que hice para realizar la aplicación:
     3 - mako
     Choose from 1, 2, 3 [1]: 
 
-    ===============================================================================
-    Documentation: https://docs.pylonsproject.org/projects/pyramid/en/latest/
-    Tutorials:     https://docs.pylonsproject.org/projects/pyramid_tutorials/en/latest/
-    Twitter:       https://twitter.com/PylonsProject
-    Mailing List:  https://groups.google.com/forum/#!forum/pylons-discuss
-    Welcome to Pyramid.  Sorry for the convenience.
-    ===============================================================================
 
     Change directory into your newly created project.
         cd pyramid_login
