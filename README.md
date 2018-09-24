@@ -16,6 +16,10 @@ Instalar la aplicación:
 
 El usuario creado por defecto es admin, con clave admin
 
+Ejecutar la aplicacion: 
+* Active el virtualenv: source env/bin/activate
+* pserve development.ini --reload
+
 
 Pasos que hice para realizar la aplicación:
 

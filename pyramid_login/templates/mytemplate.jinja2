@@ -1,5 +1,19 @@
 {% extends "layout.jinja2" %}
 
 {% block content %}
- <h1>Bienvenido {{ user }}</h1>
+<div class="home">
+  <h1>Bienvenido {{ user.name }} {{ user.lastname }}</h1>
+  <button class="view_credits btn btn-primary">Mostrar créditos</button>
+  <p class="credits" style="display: none">Desarrolador por Emanuel Pais</p>
+  <a class="btn btn-primary" href="{{ request.application_url }}/logout">Salir</a>
+</div>
+
+
+  {% block javascript %}
+  <script>
+  $( ".view_credits" ).click(function() {
+      $( ".credits" ).show( "slow" );
+    });
+  </script>
+  {% endblock %}
 {% endblock content %}
